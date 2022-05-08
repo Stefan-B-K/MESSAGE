@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <style>
+    .row {
+      margin-top: 25vh;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  </style>
+  <title>...</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col s8 offset-s2">
+      <div id="message-show" class="card-panel hide">
+        <label>Message Decrypted from URL</label>
+        <h3></h3>
+        <div>
+          Create your own secret message <a href="./index.html">here</a>
+        </div>
+      </div>
+
+      <div id="message-form" class="card-panel">
+        <form>
+          <label>Enter Message to be Encrypted</label>
+          <input id="message-input" />
+          <button class="btn">Create</button>
+        </form>
+      </div>
+
+      <div id="link-form" class="card-panel hide">
+          <input id="link-output" />
+          <button class="btn">Copy the Link</button>
+          <label>and paste in browser URL bar (or share with friend)</label>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
